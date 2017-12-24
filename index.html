@@ -1,18 +1,28 @@
----
-layout: default
----
-
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
+<!doctype html>
+<html>
+  <head>
+    <title>Coming soon page</title>
+    <style>
+      footer {
+        background-color: #eeeeee;
+        color: #333;
+        padding: 30px;
+      }
+      a{
+        text-decoration: none;
+        color: #dc0000;
+      }
+    </style>
+  </head>
+  <body>
+    <div align="center">
+      <h1>Coming soon</h1>
+      <h2>Arriver&#242; presto!</h2>
+    </div>
+    <footer>
+      <div align="center">
+        <p>developed with &#10084; by <b><a href="https://gabbiurlaro.github.io/">Gabriele Iurlaro</a></b></p>
       </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+    </footer>
+  </body>
+</html>
